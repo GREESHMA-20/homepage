@@ -148,9 +148,7 @@ header .navbar ul li a:hover::before{
     padding-top: 6rem;
 }
 
-.home .image img{
-    width:100%;
-}
+
 
 .home .content{
     flex:1 1 40rem;
@@ -172,57 +170,6 @@ header .navbar ul li a:hover::before{
 }
 
 
-
-.about{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background:#333;
-    padding:2rem;
-    padding-top: 6rem;
-}
-
-.about .image{
-    flex:1 1 40rem;
-    text-align: center;
-    padding:4rem 0;
-}
-
-.about .image img{
-    height:70vh;
-}
-
-.about .content{
-    flex:1 1 40rem;
-}
-
-.about .content h3{
-    font-size: 4rem;
-    color:#fff;
-}
-
-.about .content .heading{
-    background:rgba(0,0,0,.3);
-}
-
-.about .content p{
-    font-size: 1.5rem;
-    color:#eee;
-    padding:1rem 0;
-}
-
-.about .content ul li{
-    list-style: none;
-    font-size: 2rem;
-    color:#fff;
-    padding:.5rem 0;
-}
-
-.about .content ul li i{
-    color:var(--blue);
-}
 
 .features{
     text-align: center;
@@ -263,18 +210,9 @@ header .navbar ul li a:hover::before{
     color:#444;
 }
 
-.explore .box-container .box .price{
-    padding:1rem 0;
-    font-size: 3rem;
-    color:#333;
-    display: block;
-}
 
-.explore .box-container .box img{
-    height:20rem;
-    width:20rem;
-    margin:1rem 0;
-}
+
+
 
 .download{
     
@@ -298,48 +236,6 @@ header .navbar ul li a:hover::before{
     font-size: 2rem;
 }
 
-.contact form{
-    width:85%;
-    margin:1rem auto;
-}
-
-.contact form .inputBox{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact form .inputBox input, .contact form textarea{
-    height:4rem;
-    width:49%;
-    padding:0 1rem;
-    margin:1rem 0;
-    font-size: 2rem;
-    border:.2rem solid #eee;
-    background:none;
-    text-transform: none;
-    color:#fff;
-}
-
-.contact form .inputBox input::placeholder, .contact form textarea::placeholder{
-    color:#ccc;
-}
-
-.contact form .inputBox input:focus, .contact form textarea:focus{
-    border-color:var(--blue);
-}
-
-.contact form textarea{
-    height:20rem;
-    width:100%;
-    padding:1rem;
-    resize: none;
-}
-
-.contact form .btn:hover{
-    background:#fff;
-    color:#333;
-}
 
 .faq{
     text-align: center;
@@ -527,85 +423,3 @@ margin-top: 50px;
 
 
 
-
-/* media queries  */
-
-@media (max-width:768px){
-
-    html{
-        font-size: 55%;
-    }
-
-    header #menu{
-        display: block;
-    }
-    
-    header .navbar{
-        position: fixed;
-        top:-120%; left:0;
-        width:100%;
-        background:#fff;
-        opacity: 0;
-    }
-
-    header .navbar ul{
-        padding:2rem 0;
-        flex-flow: column;
-        justify-content: center;
-    }
-
-    header .navbar ul li a{
-        font-size: 2.5rem;
-        color:#333;
-        display: block;
-        margin:1rem 0;
-    }
-
-    header .navbar ul li a::before{
-        background:#333;
-    }
-
-    .fa-times{
-        transform: rotate(180deg);
-    }
-
-    header .navbar.nav-toggle{
-        top:7.4rem;
-        opacity: 1;
-    }
-
-    .home .content{
-        text-align: center;
-    }
-
-    .features .description{
-        width:auto;
-        padding:1rem;
-    }
-
-    .contact form{
-        width:95%;
-    }
-
-}
-
-@media (max-width:500px){
-
-    html{
-        font-size: 50%;
-    }
-
-    .home .content h1{
-        font-size: 3.5rem;
-    }
-
-    .about .image img{
-        width:80%;
-        height:auto;
-    }
-
-    .contact form .inputBox input{
-        width:100%; 
-    }
-
-}
